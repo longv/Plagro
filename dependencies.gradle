@@ -1,0 +1,3 @@
+rootProject.ext.deps = [
+        kotlin : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+]
