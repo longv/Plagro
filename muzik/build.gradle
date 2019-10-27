@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: "kotlin-kapt"
 
 android {
     compileSdkVersion 29
@@ -24,6 +25,9 @@ android {
 
 dependencies {
     def nav_version = "2.1.0"
+    compileOnly project(":muzik-processor")
+    annotationProcessor project(":muzik-processor")
+    kapt project(":muzik-processor")
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
