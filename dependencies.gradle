@@ -1,9 +1,11 @@
 rootProject.ext {
+    recyclerview_version = '1.0.0'
     java_poet_version = '1.11.1'
 }
 
 rootProject.ext.deps = [
         kotlin          : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
         kotlinReflect   : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
+        recyclerView    : "androidx.recyclerview:recyclerview:$recyclerview_version",
         javaPoet        : "com.squareup:javapoet:$java_poet_version"
 ]

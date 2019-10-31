@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="longv.muzik.HomeFragment"
+        android:name="me.longv.muzik.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action android:id="@+id/action_homeFragment_to_authorFragment" app:destination="@id/authorFragment"/>
@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/authorFragment"
-        android:name="longv.muzik.AuthorFragment"
+        android:name="me.longv.muzik.AuthorFragment"
         android:label="fragment_author"
         tools:layout="@layout/fragment_author"/>
 

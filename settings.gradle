@@ -1,1 +1,1 @@
-include ':muzik', ':muzik-processor'
+include ':muzik', ':muzik-processor', ':pokedex'
