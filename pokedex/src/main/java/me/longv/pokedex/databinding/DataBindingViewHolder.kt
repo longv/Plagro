@@ -22,9 +22,9 @@ class DataBindingViewHolder(private val viewBinding: ViewDataBinding)
         lifecycleRegistry.currentState = Lifecycle.State.DESTROYED
     }
 
-    fun bind(bindingItem: DataBindingItem) {
+    fun bind(bindingEntry: DataBindingEntry) {
         viewBinding.apply {
-            bindingItem.bindings.forEach { setVariable(it.key, it.value) }
+            bindingEntry.bindings.forEach { setVariable(it.key, it.value) }
             lifecycleOwner = this@DataBindingViewHolder
         }
 

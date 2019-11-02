@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pokedex</string>
+
+    <string name="main_version_group_title">Check out the games</string>
+    <string name="main_pokemon_title">Pokemon we love</string>
+    <string name="main_item_title">Items you need</string>
 </resources>
